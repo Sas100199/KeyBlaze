@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KeyBlaze | Playground</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <img src="Logo - KeyBlaze with Navy.png" alt="KeyBlaze Logo">
+    </div>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="playground.html" class="active">Playground</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+
+    <div class="profile" id="profile">
+      <img id="profile_picture" src="https://via.placeholder.com/50/1735FF/FFFFFF?text=?" alt="Profile">
+      <span id="profile_name">Guest</span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Your Playground</h1>
+    <p class="subtitle">Practice, Learn, and Blaze Your Typing Skills 🚀</p>
+  </section>
+
+  <!-- Playground Container -->
+  <main class="playground-container">
+    <div class="playground-box">
+      <h2>Typing Challenge</h2>
+      <p class="instruction">Type the text below as fast as you can:</p>
+      <div class="typing-text" id="typing-text">KeyBlaze makes learning fun and powerful!</div>
+      <textarea id="typing-input" placeholder="Start typing here..."></textarea>
+      <button id="start-btn"><i class="fa-solid fa-keyboard"></i> Start</button>
+    </div>
+
+    <div class="results-box">
+      <h2>Results</h2>
+      <p><strong>Time:</strong> <span id="time">0</span>s</p>
+      <p><strong>WPM:</strong> <span id="wpm">0</span></p>
+      <p><strong>Accuracy:</strong> <span id="accuracy">0</span>%</p>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="playground.js"></script>
+</body>
+</html>
